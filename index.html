@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+    <title>Soham's site</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>The Very Simple and Helpful Calculator</h1>
+        <h2>Hi!</h2>
+        <p>Dont you sometimes hate it when you're enjoying yourself with your brain cells laid back and resting and all of a sudden someone comes up to you pulling out random numbers from somewhere and asking you to perform some mathematical magic that shows you how inefficient and slow the human brain is at times of sudden action, or maybe just yours is :(. Don't you find it weird how conveniently, or inconveniently your calculator app seems to have disappeared somewhere and the judgemental looks of the person's eyes sear your flesh. Worry not, because this website is just made to save you from your woes.</p>
+        <h3>Go forth traveler. unveil the mysterious defender of the slow and confused!</h3>
+        <button class="show-calculator" onclick="showDiv()">Calculate!</button>
+    </div>
+    <div id="calculator" class="calculator-grid" style="display: none;">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-delete>DEL</button>
+        <button data-all-clear class="span-three">C</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>/</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>*</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>-</button>
+        <button data-number>0</button>
+        <button data-number>.</button>
+        <button data-operation class="span-two">+</button>
+        <button data-equals class="span-four">=</button>
+    </div>
+    <script>
+        function showDiv() {
+          document.getElementById("calculator").style.display = "grid";
+        }
+    </script>
+</body>
+</html>
